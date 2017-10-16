@@ -55,6 +55,32 @@ class Customer
 
     end
 
+    # def enough_funds_for_ticket()
+    #   sql = "SELECT * FROM customers (name, funds) = ($1, $2) WHERE funds -= 10"
+    #   values = [@name, @funds, @id]
+    #   SqlRunner.run(sql, values)
+    # end
+
+    # def delete_funds()
+    #    sql = "DELETE funds.* FROM customers
+    #    INNER JOIN tickets
+    #    ON tickets.film_id = films.id
+    #    WHERE customer_id = $1"
+    #
+    #    values = [@funds]
+    #    results = SqlRunner.run(sql, values)
+    #    films = results.delete {|customer| Customer.new(customer)}
+    #    return customers
+    # end
+
+
+    # checks funds avaialble against ticket price,
+    #customer1.funds > tickets?
+    #[customer funds = - price]
+    
+    # check how many tickets bought by a customer,
+    #customer1.tickets?
+
 
 
 
